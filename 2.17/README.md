@@ -93,4 +93,20 @@ GDB 是由 GNU 软件系统社区提供的调试工具，同 GCC 配套组成了
 文件输入：从文件中获取内容到内存中。
 文件输出：从内存中获取内容到文件中。
 
+## 常见的C语言文件操作函数
+
+* FILE *fopen( const char *fname, const char *mode );                   打开文件
+* int fclose( FILE *stream );                                           关闭文件
+* int fread( void *buffer, size_t size, size_t num, FILE *stream );     从文件中读取
+* int fwrite( const void *buffer, size_t size, size_t count, FILE *stream );向文件中写入
+* char *fgets( char *str, int num, FILE *stream );                      从文件中读取字符串
+*  int fputs( const char *str, FILE *stream );                          向文件中输出字符串
+* int fscanf( FILE *stream, const char *format, ... );                  将标准输入输入到文件中
+* int fprintf( FILE *stream, const char *format, ... );                 将标准输出输出到文件中
+* int fseek( FILE *stream, long offset, int origin );                   偏移文件指针
+* int fgetc( FILE *stream );                                            从文件中读取字符
+* long ftell( FILE *stream );                                           返回当前文件位置
+* int feof( FILE *stream );                                             在文件流的文件尾部返回一个非零值
+* int fflush( FILE *stream );                                           将输出到缓冲区的内容写入文件/清空输入缓冲区
+
 

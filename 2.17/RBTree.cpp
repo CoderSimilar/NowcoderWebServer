@@ -40,7 +40,7 @@ int RBTreeNode::insertRBNode(RBTreeNode* root, Type key) {
 
 //删除节点（key为节点的值）
 void RBTreeNode::deleteRBNode(RBTreeNode* root, Type key){
-
+    
 }
 
 
