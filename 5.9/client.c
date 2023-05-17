@@ -17,7 +17,7 @@ int main() {
 
     //2，连接服务器端
     struct sockaddr_in severaddr;
-    inet_pton(AF_INET, "www.baidi.com", &severaddr.sin_addr.s_addr);
+    inet_pton(AF_INET, "47.102.144.228", &severaddr.sin_addr.s_addr);
     severaddr.sin_port = htons(9999);
     int ret = connect(fd, (struct sockaddr *)&severaddr, sizeof(severaddr));
 
